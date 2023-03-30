@@ -254,7 +254,6 @@ begin
             auxCollision <= randomNumberGenerator(0) xor randomNumberGenerator(1);
             randomNumberGenerator(1 downto 0)<= auxCollision & randomNumberGenerator(1 downto 1);
             NbShift := NbShift + 1; 
-       
         elsif NbShift = 2 then
             BackOffTime <= '1';
             collisionDetected<='0';

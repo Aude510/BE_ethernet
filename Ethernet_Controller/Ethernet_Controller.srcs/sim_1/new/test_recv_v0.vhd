@@ -84,20 +84,20 @@ begin
     -----------------------Décommenter le test souhaité ----------------------------------------
     
     -------------------- COLLISION : tester transmission et réception en même temps -------------
-    t_renabp <= '0', '1' after 8*period; 
-    t_RDATAI <= X"00", X"AB" after 2*8*period, X"FF" after  3*8*period, X"AB" after 4*8*period, X"00" after 5*8*period;
-    -- X"EE" after 4*8*period, X"DD" after 5*8*period, 
-    --    X"CC" after 6*8*period, X"BB" after 7*8*period, X"AA" after 8*8*period, 
-    --    X"12" after 9*8*period,
-    --    X"AB" after 10*8*period, X"12" after 11*8*period; 
+--    t_renabp <= '0', '1' after 8*period; 
+--    t_RDATAI <= X"00", X"AB" after 2*8*period, X"FF" after  3*8*period, X"AB" after 4*8*period, X"00" after 5*8*period;
+--    -- X"EE" after 4*8*period, X"DD" after 5*8*period, 
+--    --    X"CC" after 6*8*period, X"BB" after 7*8*period, X"AA" after 8*8*period, 
+--    --    X"12" after 9*8*period,
+--    --    X"AB" after 10*8*period, X"12" after 11*8*period; 
         
         
-     t_tavailp <= '0', '1' after 7*period,
-     '0' after 8*period;
+--     t_tavailp <= '0', '1' after 7*period,
+--     '0' after 8*period;
            
-     t_tdatai <= X"00", X"EF" after 8*2*period, X"CD" after 8*3*period, X"AA" after 8*4*period, X"EF" after 8*5*period; 
+--     t_tdatai <= X"00", X"EF" after 8*2*period, X"CD" after 8*3*period, X"AA" after 8*4*period, X"EF" after 8*5*period; 
            
-     t_tfinishp <= '0'; 
+--     t_tfinishp <= '0'; 
        
     
     -------------------- RECEPTION -----------------------------------
@@ -147,12 +147,12 @@ begin
     
     ---------------------- 2eme transmission : avortée  ----------------------------
   
---    t_tavailp <= '0', '1' after 7*period,'0' after 8*period;
---      -- adresse destination AACDEFAACDEF
---    t_tdatai <= X"00", X"AA" after 2*8*period, X"CD" after 3*8*period, X"EF" after 4*8*period, X"AA" after 5*8*period,
---          X"CD" after 6*8*period, X"EF" after 7*8*period; 
+    t_tavailp <= '0', '1' after 7*period,'0' after 8*period;
+      -- adresse destination AACDEFAACDEF
+    t_tdatai <= X"00", X"AA" after 2*8*period, X"CD" after 3*8*period, X"EF" after 4*8*period, X"AA" after 5*8*period,
+          X"CD" after 6*8*period, X"EF" after 7*8*period; 
    
---    t_tabortp <= '1' after ((8*7)+2)*period, '0' after ((8*7)+3)*period; 
+    t_tabortp <= '1' after ((8*7)+2)*period, '0' after ((8*7)+3)*period; 
     
     
     
