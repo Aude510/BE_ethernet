@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Mar  1 16:54:34 2023
+# Process ID: 15575
+# Current directory: /home/rmoulin/4A/BE-Acces/project_1/project_1.runs/synth_1
+# Command line: vivado -log bits8_counter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bits8_counter.tcl
+# Log file: /home/rmoulin/4A/BE-Acces/project_1/project_1.runs/synth_1/bits8_counter.vds
+# Journal file: /home/rmoulin/4A/BE-Acces/project_1/project_1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source bits8_counter.tcl -notrace
