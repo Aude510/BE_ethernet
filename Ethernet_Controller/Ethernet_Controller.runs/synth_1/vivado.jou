@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Mar 24 16:14:57 2023
-# Process ID: 6411
+# Start of session at: Thu Mar 30 15:25:40 2023
+# Process ID: 19780
 # Current directory: /home/rmoulin/4A/BE-Acces/Ethernet_Controller/Ethernet_Controller.runs/synth_1
 # Command line: vivado -log ethernet_controller.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ethernet_controller.tcl
 # Log file: /home/rmoulin/4A/BE-Acces/Ethernet_Controller/Ethernet_Controller.runs/synth_1/ethernet_controller.vds

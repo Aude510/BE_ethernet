@@ -38,6 +38,9 @@ read_vhdl -library xil_defaultlib /home/rmoulin/4A/BE-Acces/Ethernet_Controller/
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc /home/rmoulin/4A/BE-Acces/Ethernet_Controller/Ethernet_Controller.srcs/constrs_1/new/constraint.xdc
+set_property used_in_implementation false [get_files /home/rmoulin/4A/BE-Acces/Ethernet_Controller/Ethernet_Controller.srcs/constrs_1/new/constraint.xdc]
+
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 

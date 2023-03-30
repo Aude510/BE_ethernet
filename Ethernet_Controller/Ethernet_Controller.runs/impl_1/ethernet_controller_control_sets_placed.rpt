@@ -1,0 +1,82 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu Mar 30 15:27:29 2023
+| Host         : insa-20142 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : report_control_sets -verbose -file ethernet_controller_control_sets_placed.rpt
+| Design       : ethernet_controller
+| Device       : xc7a35t
+------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    15 |
+| Unused register locations in slices containing registers |    44 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            6 |
+|      4 |            1 |
+|      8 |            2 |
+|    16+ |            6 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             204 |           37 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              78 |           14 |
+| Yes          | No                    | No                     |             138 |           20 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              88 |           10 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+-------------------+----------------------------+------------------+----------------+
+|    Clock Signal   |   Enable Signal   |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
++-------------------+-------------------+----------------------------+------------------+----------------+
+|  CLK10I_IBUF_BUFG |                   | TREADDP2_out               |                1 |              2 |
+|  CLK10I_IBUF_BUFG |                   | RBYTEP_i_1_n_0             |                1 |              2 |
+|  CLK10I_IBUF_BUFG |                   | RCLEANP_i_1_n_0            |                1 |              2 |
+|  CLK10I_IBUF_BUFG |                   | RDONEP22_out               |                1 |              2 |
+|  CLK10I_IBUF_BUFG |                   | RSTARTP_i_1_n_0            |                1 |              2 |
+|  CLK10I_IBUF_BUFG | RSMATIP_i_1_n_0   |                            |                1 |              2 |
+|  CLK10I_IBUF_BUFG |                   | TDONEP3_out                |                1 |              4 |
+|  CLK10I_IBUF_BUFG | TDATAO[6]_i_1_n_0 |                            |                2 |              8 |
+|  CLK10I_IBUF_BUFG | TDATAO[6]_i_1_n_0 | TDATAO[7]_i_1_n_0          |                1 |              8 |
+|  CLK10I_IBUF_BUFG | RDATAO[7]_i_2_n_0 | RDATAO[7]_i_1_n_0          |                1 |             16 |
+|  CLK10I_IBUF_BUFG |                   | NbBitsReceived[31]_i_1_n_0 |                8 |             64 |
+|  CLK10I_IBUF_BUFG | isTransmitting1   |                            |                9 |             64 |
+|  CLK10I_IBUF_BUFG | NbByteSent        | NbByteSent[0]_i_1_n_0      |                8 |             64 |
+|  CLK10I_IBUF_BUFG | p_2_out[1]        |                            |                8 |             64 |
+|  CLK10I_IBUF_BUFG |                   |                            |               37 |            204 |
++-------------------+-------------------+----------------------------+------------------+----------------+
+
+
